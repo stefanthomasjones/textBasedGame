@@ -5,25 +5,27 @@
         this.name = name
     }
   get welcome(){
-    return console.log(this.name)
+    return this.name
   } 
 }
 
 export class Dog extends Animal {
-    constructor() {
-        super() 
+    constructor(name) {
+        super(name) 
         this.health = 100
     }
 }
 
 export class Cat extends Animal {
-    constructor() {
+    constructor(name) {
+        super(name) 
         this.health = 80
     }
 }
 
 export class Rabbit extends Animal {
-    constructor() {
+    constructor(name) {
+        super(name) 
         this.health = 40
     }
 }
